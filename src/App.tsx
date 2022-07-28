@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import CreateTodo from './CreateTodo';
+// import Counter from './Counter';
+// import Counter_Reduce from './Counter_Reduce';
+import ReducerSample from './ReducerSample';
+// import MyForm from './MyForm';
+import { SampleProvider } from './SampleContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Counter /> */}
+      {/* <MyForm /> */}
+      {/* <Counter_Reduce /> */}
+      <SampleProvider>
+        <ReducerSample/>
+      </SampleProvider>
     </div>
   );
 }
